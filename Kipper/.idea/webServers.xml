@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="ba6e06fb-76db-489c-b834-301d1c232a05" name="LocalServer" url="http://localhost:1234">
+        <fileTransfer port="0" mountedRoot="C:\xampp\htdocs\Projects\Kipper" accessType="MOUNT" />
+      </webServer>
+    </option>
+  </component>
+</project>

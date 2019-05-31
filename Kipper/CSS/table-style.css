@@ -1,0 +1,110 @@
+.noselect {
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none; /* Non-prefixed version, currently
+                           supported by Chrome and Opera */
+  }
+.table-wrapper{
+    /*display: inline-flex;*/
+    float: left;
+    margin: 10px 0px 10px 5px;
+    
+}
+.circle{
+    position: relative;
+    /*top:50%;
+    left: 50%;*/
+    border-radius: 50%;
+    background-image: url(../images/ashraf-dev.png);
+    border: none;
+    display: flex;
+    width: 130px;
+    height: 130px;
+    /*color:yellow;*/
+    margin-top:20px;
+    margin-left:20px;
+    transition: transform .3s;
+    box-shadow: 0 0 3px rgba(0,0,0,0.5);
+    z-index: 1;
+    padding: 0;
+    align-content: left;
+}
+
+.circle:hover{
+    box-shadow: 0 0 5px slateblue;
+    transform: scale(1.1);
+    cursor: pointer;
+}
+.number{
+    position: absolute;
+    font-size:60px;
+    top:10%;
+    left:0;
+    padding-left: 2px;
+    font-style: italic;
+    z-index:10 ;
+    text-align: left;
+    display: block;
+    /*border: solid 2px red;*/
+    width: 90%;
+    text-shadow: 2px 2px 3px black;
+}
+
+.alert-note{
+    visibility: hidden;
+    border-radius: 50%; 
+    width: 30px;
+    height: 30px;
+    box-shadow: 0 0 2px rgba(255,0,0,0.5);
+    transition: transform .3s;
+    top:5%;
+    left:80%;
+    position: relative;
+    display: block;
+    background-color: rgba(255,0,0,0.9);
+    text-align: center;
+    align-content: center;
+    font-size: 15pt;
+    color:white;
+    z-index: 3;
+}
+.alert-note:hover{
+    transform: scale(1.1);
+    box-shadow: 0 0 5px red;
+}
+
+.status-bar{
+    width:90px;
+    height:20px;
+    position: relative;
+    top:70%;
+    left:-30%;
+    display: block;
+    z-index: 5;
+    border-radius: 3px;
+    text-align: center;
+    font-weight: bold;
+    color: whitesmoke;
+}
+.status-bar-free{
+
+    background-color: rgba(90, 245, 29, 0.9);
+    box-shadow: 2px 2px 3px rgb(0,0,0);
+}
+.status-bar-busy{
+    background-color: rgba(141,28,16,0.9);
+    box-shadow: 2px 2px 3px rgb(0,0,0);
+    
+}
+.status-bar-reserved{
+
+    background-color: rgba(255,216,0, 0.9);
+    box-shadow: 2px 2px 3px rgb(0,0,0);
+}
+.status-bar-unavailable{
+    
+    background-color: rgba(128,128,128,0.9);
+    box-shadow: 2px 2px 3px rgb(0,0,0);
+}

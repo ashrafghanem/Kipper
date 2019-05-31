@@ -1,0 +1,120 @@
+*{
+    font-family: my-font;
+}
+@font-face {
+    font-family: my-font;
+    src: url(../Fonts/Sansation_Regular.ttf);
+}
+
+.no-select {
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome and Opera */
+}
+
+.content-holder{
+    height: auto;
+    background-color: rgba(0,0,0,0.5);
+    padding: 2em 3em 2em 3em;
+    text-align: left;
+    Color: white;
+    font-weight: lighter;
+}
+.developer-holder{
+    height: auto;
+    width: 100%;
+    background-color: rgba(0,0,0,0.5);
+    padding: 2em 3em 2em 5em;
+    text-align: left;
+    Color: white;
+    font-weight: lighter;
+}
+a.button1{
+    display:inline-block;
+    padding:0.35em 1.2em;
+    border:0.1em solid #FFFFFF;
+    margin:0 0.3em 0.3em 0;
+    border-radius:0.12em;
+    box-sizing: border-box;
+    text-decoration:none;
+    font-weight:300;
+    font-size: 20pt;
+    color:#FFFFFF;
+    text-align:center;
+    transition: all 0.2s;
+}
+a.button1:hover{
+    color:#000000;
+    background-color:#FFFFFF;
+}
+@media all and (max-width:30em){
+    a.button1{
+    display:block;
+    margin:0.4em auto;
+    }
+}
+
+.bouncy{
+    animation: bouncy 3s infinite linear;
+    position:relative;
+    }
+@keyframes bouncy {
+    0% {top:0}
+    40% {top:0}
+    43% {top:-0.9em}
+    46% {top:0}
+    48% {top:-0.4em}
+    50% {top:0}
+    100% {top:0;}
+}
+
+.reg-div-1{
+    animation: hide-with-fade 0.5s 1 linear both;
+    position:relative;
+}
+.reg-div-2{
+    display: block;
+    animation: show-from-fade 0.5s 1 linear both;
+    position:relative;
+}
+@keyframes hide-with-fade {
+    0%  {left:0;opacity:1}
+    10% {left:60px}
+    50% {left:300px;opacity:0.5}
+    100% {left:480px;opacity:0;display:none}
+}
+@keyframes show-from-fade {
+    0%  {left:-300px;opacity:0}
+    40% {left:-200px}
+    80% {left:-100px}
+    100% {left:0;opacity:1}
+}
+
+input.field{
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: solid;
+    background: none;
+}
+.search{
+    width: 50px;
+    height: 35px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: white;
+    opacity: 0.8;
+    padding: 12px 20px 12px 40px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+}
+@media all and (min-width:768px) {
+    .search:focus {
+        width: 150%;
+    }
+}

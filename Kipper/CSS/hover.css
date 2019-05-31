@@ -1,0 +1,20 @@
+.hoverFb:hover{
+    color: #203f98;
+    cursor: pointer;
+    text-shadow: 1px 1px 1px black;
+}
+.hoverTw:hover{
+    color: #0c83ed;
+    cursor: pointer;
+    text-shadow: 1px 1px 1px black;
+}
+.hoverInst:hover{
+    color: #bc1274;
+    cursor: pointer;
+    text-shadow: 1px 1px 1px black;
+}
+/* Style the active class, and buttons on mouse-over */
+.active-btn .header-btn:hover {
+    background-color: #0e1011;
+    color: white;
+}
